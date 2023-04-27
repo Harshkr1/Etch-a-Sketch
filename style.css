@@ -1,0 +1,24 @@
+#container
+{
+    border: 2px solid black;
+    width: 50%;
+    height: 90vh;
+    margin-left: 25%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.rows
+{
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex:1 1 0 ;
+
+    /* we have appliedhere flex grow and flex shrink here */
+}
+.coulm{
+    margin: 10px;
+    border :2px solid green;
+    display: flex;
+    flex: 1 1 auto
+}
