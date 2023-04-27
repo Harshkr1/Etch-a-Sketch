@@ -1,17 +1,18 @@
 #container
 {
     border: 2px solid black;
-    width: 50%;
-    height: 90vh;
-    margin-left: 25%;
-    margin-right: 20%;
+    width: 55%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    align-self: center;
+    margin-right: 7%;
+
 }
 .rows
 {
-    border: 2px solid rgb(0, 0, 0);
-    display: flex;
+     display: flex;
     flex:1 1 0 ;
 
     /* we have appliedhere flex grow and flex shrink here */
@@ -20,5 +21,55 @@
     margin: 10px;
     border :2px solid green;
     display: flex;
-    flex: 1 1 auto
+    flex: 1 1 auto;
+    margin: 2px;
+}
+h1{
+    text-align: center;
+    margin-top: 5%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15vh;
+    background-image: url(./images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+}
+#main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid palevioletred;
+    font-size: x-large;
+    padding: 3vh;
+    margin: 4vh;
+    height: fit-content;
+}
+input{
+    height: 4vh;
+    
+}
+button{
+    margin: 3vh;
+    width: 30%;
+    height: 40%;
+}
+.middle
+{
+    border: 2px solid green;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content:space-between;
+    padding: 6vh;
+    padding-top: 0vh;
 }
