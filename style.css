@@ -1,7 +1,7 @@
 #container {
     border: 2px solid black;
-    width: 35%;
-    height: 75vh;
+    width: 50%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -13,17 +13,17 @@
 .rows {
     display: flex;
     flex: 1 1 0;
-    border: 2px solid red;
     margin: 3px;
     /* we have appliedhere flex grow and flex shrink here */
 }
 
-.coulm {
+.coulm
+{
     margin: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(238, 0, 255);
     display: flex;
     flex: 1 1 auto;
-    margin: 2px;
+    margin: 1px;
 }
 
 h1 {
@@ -87,4 +87,8 @@ button {
 h3 {
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.coulmes{
+    border : 2px solid rgb(255, 8, 8)
 }

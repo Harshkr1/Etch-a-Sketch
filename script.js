@@ -1,13 +1,11 @@
 const row = function (num) {
     const container = document.getElementById('container');
-
     for (let i = 0; i < num; i++) {
         const row = document.createElement('div');
         row.classList.add('rows');
         container.appendChild(row);
     }
     const arr = document.querySelectorAll('.rows')
-
     for (const item of arr) {
         const input = document.querySelector('input');
         const btn = document.querySelector('.btn');
@@ -16,19 +14,17 @@ const row = function (num) {
             const coulmn = document.createElement('div');
             coulmn.classList.add('coulm');
             item.appendChild(coulmn);
-
         }
     }
 
 }
 row(16);
-const remove=function()
-{
-    
+const emptyHTMl = function (parentnode) {
+    parentnode.innerHTML = "";
 }
-
-
 const gridnum = function () {
+    const container = document.getElementById('container');
+
     const input = document.querySelector('input');
     const btn = document.querySelector('.btn');
     const grid = document.querySelector('.grid');
@@ -38,11 +34,13 @@ const gridnum = function () {
             message.classList.add('message');
             message.textContent = 'Enter something in between 1 and 40';
             grid.appendChild(message);
-
         }
         else {
+            //to empty inner HTML Here what we  need to do is :
+            emptyHTMl(container);
             row(input.value);
         }
+
     })
 }
 gridnum();
