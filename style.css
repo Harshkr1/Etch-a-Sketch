@@ -1,12 +1,16 @@
+
+
 #container {
     border: 2px solid black;
-    width: 50%;
-    height: 90vh;
+    width: 65%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     align-self: center;
     margin-right: 7%;
+    margin-left: 5%;
+    margin-top: 0;
 
 }
 
@@ -17,10 +21,9 @@
     /* we have appliedhere flex grow and flex shrink here */
 }
 
-.coulm
-{
+.coulm {
     margin: 10px;
-    border: 2px solid rgb(238, 0, 255);
+    border: 2px solid rgb(7, 146, 134);
     display: flex;
     flex: 1 1 auto;
     margin: 1px;
@@ -53,35 +56,83 @@ h1 {
     border: 2px solid palevioletred;
     font-size: x-large;
     padding: 3vh;
-    margin: 4vh;
     height: fit-content;
+    margin-top: 8vh;
+
 }
 
-input {
-    height: 4vh;
+img {
+    width: 15%;
+    margin: 8%;
+    height: auto;
+}
 
+input[type=number] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #110505;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 5px 5px 3px green;
+
+}
+input[type=number]:focus
+{
+    width: 30%;
 }
 
 button {
     margin: 3vh;
     width: 30%;
     height: 50%;
+
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #30004285;
+    border: 2 px solid purple;
+    border-radius: 5vh;
+    box-shadow: 0 9px #999999;
+
+
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #03376c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .middle {
     border: 2px solid green;
-    height: 100vh;
+    height: fit-content;
     width: 90vw;
     display: flex;
-    justify-content: space-between;
-    padding: 6vh;
+    justify-content: flex-start;
+    padding: 3vh;
     padding-top: 0vh;
+
 }
 
 .btn {
-    font-size: larger;
-    width: 40%;
-    height: max-content;
+    font-size: large;
+    width: 15%;
+    height: fit-content;
 }
 
 h3 {
@@ -89,6 +140,50 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.coulmes{
-    border : 2px solid rgb(255, 8, 8)
+.coulmes {
+    border: 2px solid rgb(255, 8, 8)
+}
+
+.colorss {
+    border: 2px solid violet;
+    display: flex;
+    padding: 20px;
+    width: 70%;
+}
+
+.color {
+    border: 2px solid turquoise;
+    width: 100%;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    border: 2px solid greenyellow;
+    display: flex;
+    flex: 1 1 0;
+    height: 10vh;
+    margin: 10px;
+}
+
+.reset {
+    font-size: large;
+    width: 20%;
+}
+
+.set {
+    border: 2px solid goldenrod;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg {
+    width: 11vh;
+    height: 11vh;
+    margin: 5%
 }

@@ -11,15 +11,28 @@
 </head>
 
 <body>
-
-
     <div id="main">
         <h1> Etch-a-Sketch</h1>
         <div class="middle">
             <div class="grid">
-                <h3> Enter the Number you want grid of :</h3>
-                <input type="number">
-                <button class="btn"> Set</button>
+                <div class="set">
+                    <h3> Enter the Number you want grid of :</h3>
+                    <input type="number">
+                    <button class="btn"> Set</button>
+                </div>
+                <div class="color">
+                    <h4> Select the color of Block:</h4>
+                    <div class="colorss">
+                        <div class="item"  style="background-color:black "  ></div>
+                        <div class="item"  style="background-image:linear-gradient(violet,indigo,blue,green,yellow,orange,red) " ></div>
+                        <div class="item"  style="background-color: white"></div>
+                        <div class="item" style="background-color:rgb(9, 130, 130)"></div>
+                    </div>
+                    <div class="bg" style="background-image: linear-gradient( to right,rgb(7, 104, 123),rgb(232, 217, 217), white, rgb(236, 236, 236));
+                    "></div>
+                   <img src="./images/eraser.png" >
+                </div>
+                <button class="reset">Reset</button>
             </div>
             <div id="container">
             </div>
