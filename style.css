@@ -1,7 +1,6 @@
-#container
-{
+#container {
     border: 2px solid black;
-    width: 55%;
+    width: 35%;
     height: 75vh;
     display: flex;
     flex-direction: column;
@@ -10,40 +9,43 @@
     margin-right: 7%;
 
 }
-.rows
-{
-     display: flex;
-    flex:1 1 0 ;
 
+.rows {
+    display: flex;
+    flex: 1 1 0;
+    border: 2px solid red;
+    margin: 3px;
     /* we have appliedhere flex grow and flex shrink here */
 }
-.coulm{
+
+.coulm {
     margin: 10px;
-    border :2px solid green;
+    border: 2px solid rgb(0, 0, 0);
     display: flex;
     flex: 1 1 auto;
     margin: 2px;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 5%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15vh;
     background-image: url(./images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    
+
 }
-#main
-{
+
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.grid
-{
+
+.grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,22 +56,35 @@ h1{
     margin: 4vh;
     height: fit-content;
 }
-input{
+
+input {
     height: 4vh;
-    
+
 }
-button{
+
+button {
     margin: 3vh;
     width: 30%;
-    height: 40%;
+    height: 50%;
 }
-.middle
-{
+
+.middle {
     border: 2px solid green;
     height: 100vh;
     width: 90vw;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 6vh;
     padding-top: 0vh;
+}
+
+.btn {
+    font-size: larger;
+    width: 40%;
+    height: max-content;
+}
+
+h3 {
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
