@@ -81,6 +81,30 @@ const blackPen = function () {
         block.forEach(colorChange);
     })
 }
+const RandomeColorGenerator= function ()
+{
+    let letter= '0123456789ABCDEF';
+    let hexCode='#';
+    for( let i=0;i<6;i++)
+    {
+        hexCode+=letter[Math.floor(Math.random()*16)]
+    }
+    return hexCode;
+}
+const randomColorSelector=function(item)
+{
+    let color= RandomeColorGenerator();
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = color;
+    })
+}
+const mixPen = function () {
+    const block = document.querySelectorAll('.coulm');
+    const pen = document.querySelector('.item2')
+    pen.addEventListener('click', () => {
+        block.forEach(randomColorSelector);
+    })
+}
 const run = function () {
     row(16);
     reset();
@@ -88,5 +112,6 @@ const run = function () {
     addColor();
     removerColor();
     blackPen();
+    mixPen();
 }
 run();
