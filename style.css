@@ -1,5 +1,9 @@
-html{
-    background-image: linear-gradient(to right, rgb(33, 177, 238), rgb(185, 196, 202),white);
+* {
+    border: 2px solid green;
+}
+
+html {
+    background-image: linear-gradient(to right, rgb(33, 177, 238), rgb(185, 196, 202), white);
 }
 
 #container {
@@ -85,7 +89,7 @@ input[type=number] {
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    font-weight:bolder;
+    font-weight: bolder;
 
 }
 
@@ -98,7 +102,7 @@ input[type=number]:focus {
     width: 90vw;
     display: flex;
 
- 
+
     padding: 3vh;
     padding-top: 0vh;
 
@@ -141,7 +145,7 @@ input[type=number]:focus {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     box-shadow: 5px 5px 10px rgb(1, 15, 23);
     border-radius: 10px;
-    font-size:3vh;
+    font-size: 3vh;
 }
 
 .item1 {
@@ -155,7 +159,7 @@ input[type=number]:focus {
 }
 
 .reset {
-    font-size:1em;
+    font-size: 1em;
     width: 20%;
 
 }
@@ -179,19 +183,101 @@ input[type=number]:focus {
 button {
     border: 4px solid black;
     margin: 4vh;
-    background-color:rgb(213, 59, 255);
+    background-color: rgb(213, 59, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
 
 }
-.clr
-{
+
+.clr {
     font-size: 3vh;
     background-color: aqua;
     padding: 10px;
 }
-h3,h4{
-    font-family:Calibri, 'Trebuchet MS', sans-serif ;
-    font-size:larger
+
+h3,
+h4 {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em
 }
+
+@media only screen and (max-width: 610px) {
+    h1 {
+        font-size: 10vh;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    h3,
+    h4 {
+        font-size: 3.5vh;
+    }
+
+    #container {
+        width: 95%;
+        height: 80vh;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    button {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 10vh;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    #container {
+        height: 60vh;
+        width: 80vw;
+    }
+    h3,h4{
+        font-size: 1em
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 10vh;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    #container {
+        height: 60vh;
+        width: 80vw;
+    }
+    .clr,.reset{
+        font-size: 2.5vh;
+    }
+    h3,h4{
+        font-size:2em;
+    }
+    .btn{
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {}
