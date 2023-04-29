@@ -47,6 +47,14 @@ const gridnum = function () {
             //to empty inner HTML Here what we  need to do is :
             emptyHTMl(container);
             row(input.value);
+            addColor();
+            removerColor();
+            blackPen();
+            mixPen();
+            warm();
+            cold();
+            clear();
+            input.value="";
         }
 
     })
@@ -81,19 +89,16 @@ const blackPen = function () {
         block.forEach(colorChange);
     })
 }
-const RandomeColorGenerator= function ()
-{
-    let letter= '0123456789ABCDEF';
-    let hexCode='#';
-    for( let i=0;i<6;i++)
-    {
-        hexCode+=letter[Math.floor(Math.random()*16)]
+const RandomeColorGenerator = function () {
+    let letter = '0123456789ABCDEF';
+    let hexCode = '#';
+    for (let i = 0; i < 6; i++) {
+        hexCode += letter[Math.floor(Math.random() * 16)]
     }
     return hexCode;
 }
-const randomColorSelector=function(item)
-{
-    let color= RandomeColorGenerator();
+const randomColorSelector = function (item) {
+    let color = RandomeColorGenerator();
     item.addEventListener('mouseover', () => {
         item.style.backgroundColor = color;
     })
@@ -105,6 +110,42 @@ const mixPen = function () {
         block.forEach(randomColorSelector);
     })
 }
+const warmColor = function (item) {
+    let color = RandomeColorGenerator();
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = "rgb(255, 164, 8)";
+    })
+}
+const warm = function () {
+    const block = document.querySelectorAll('.coulm');
+    const pen = document.querySelector('.item3')
+    pen.addEventListener('click', () => {
+        block.forEach(warmColor);
+    })
+}
+const coldColor = function (item) {
+    let color = RandomeColorGenerator();
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = "rgb(0, 135, 254)";
+    })
+}
+const cold = function () {
+    const block = document.querySelectorAll('.coulm');
+    const pen = document.querySelector('.item4')
+    pen.addEventListener('click', () => {
+        block.forEach(coldColor);
+    })
+}
+const bgRem = function (item) {
+    item.style.backgroundColor = "";
+}
+const clear = function () {
+    const clr = document.querySelector('.clr')
+    const block = document.querySelectorAll('.coulm');
+    clr.addEventListener('click', () => {
+        block.forEach(bgRem);
+    })
+}
 const run = function () {
     row(16);
     reset();
@@ -113,5 +154,8 @@ const run = function () {
     removerColor();
     blackPen();
     mixPen();
+    warm();
+    cold();
+    clear();
 }
 run();
