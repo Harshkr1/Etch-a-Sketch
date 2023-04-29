@@ -53,22 +53,40 @@ const gridnum = function () {
 }
 const colorChange = function (item) {
     item.addEventListener('mouseover', () => {
-        item.style.backgroundColor ="black";
+        item.style.backgroundColor = "black";
     })
 }
-
 const addColor = function () {
     //all 256 divs are selected here not to add touch function here 
     const block = document.querySelectorAll('.coulm');
     block.forEach(colorChange);
 }
-
-
-
+const bgRemove = function (item) {
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = "";
+    })
+}
+//we neeed mehtod to remove existing background color when eraser button is clicked and then it is hovered over it 
+const removerColor = function () {
+    const block = document.querySelectorAll('.coulm');
+    const eraser = document.querySelector('img');
+    eraser.addEventListener('click', () => {
+        block.forEach(bgRemove);
+    })
+}
+const blackPen = function () {
+    const block = document.querySelectorAll('.coulm');
+    const pen = document.querySelector('.item1')
+    pen.addEventListener('click', () => {
+        block.forEach(colorChange);
+    })
+}
 const run = function () {
     row(16);
     reset();
     gridnum();
     addColor();
+    removerColor();
+    blackPen();
 }
 run();
